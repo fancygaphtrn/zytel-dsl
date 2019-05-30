@@ -20,8 +20,8 @@ Return data:
 {"download": "1.792", "upload": "0.605", "dslStatus": "CONNECTED", "internetStatus": "CONNECTED", "modemIP": "xx.xx.xx.xx", "RemoteIP": "xx.xx.xx.xx"}
 
 
-##Home assistant
-###configuration.yaml
+## Home assistant
+### configuration.yaml
 sensor:
   - platform: command_line
     name: DSL download
@@ -36,5 +36,5 @@ sensor:
     command: !secret dsl_command
     value_template: '{{ value_json.upload }}'
 
-###secerts.yaml
+### secerts.yaml
 dsl_command: '/usr/src/dsl/GetWANDSLInfo.py x.x.x.x user password'
