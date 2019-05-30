@@ -22,6 +22,7 @@ Return data:
 
 ## Home assistant
 ### configuration.yaml
+```yaml
 sensor:
   - platform: command_line
     name: DSL download
@@ -35,6 +36,9 @@ sensor:
     scan_interval: 300
     command: !secret dsl_command
     value_template: '{{ value_json.upload }}'
+```
 
 ### secerts.yaml
+```yaml
 dsl_command: '/usr/src/dsl/GetWANDSLInfo.py x.x.x.x user password'
+```
