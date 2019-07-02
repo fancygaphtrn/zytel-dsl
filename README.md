@@ -1,3 +1,7 @@
+I quit using this method and am using a Home Assistant custom component.
+https://github.com/fancygaphtrn/pk5001z
+
+
 # zytel-dsl
 Retrieve JSON formatted WAN information from a Zytel PK5001Z modem
 
